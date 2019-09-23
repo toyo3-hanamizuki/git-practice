@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>BMI判定</title>
+</head>
+<body>
+    
+<script>
+var bmi;
+var height;
+var weight;
+
+height=prompt('身長を入力してください。(cm)','');
+weight=prompt('体重を入力してください。(kg)','');
+height=height/100;
+
+bmi=weight/(height*height);
+
+if(bmi<18.5){
+    alert('低体重です。');
+} else if(bmi>=18.5 && bmi<25){
+    alert('普通です。');
+} else {
+    alert('肥満気味です。');
+}
+
+</script>
+</body>
+</html>
